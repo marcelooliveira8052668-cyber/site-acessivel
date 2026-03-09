@@ -179,3 +179,25 @@ voz.lang = "pt-BR";
 speechSynthesis.speak(voz);
 
 }
+
+function descreverImagens(){
+
+let imagens = document.querySelectorAll("img");
+
+imagens.forEach(function(img){
+
+let descricao = img.alt;
+
+if(descricao){
+
+let fala = new SpeechSynthesisUtterance("Imagem: " + descricao);
+
+fala.lang = "pt-BR";
+
+speechSynthesis.speak(fala);
+
+}
+
+});
+
+}

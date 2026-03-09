@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Site Inclusivo</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+  <nav>
+
+<button onclick="irPara('servicos')">Serviços</button>
+
+<button onclick="irPara('comunicacao')">Comunicação</button>
+
+<button onclick="irPara('acessibilidade')">Acessibilidade</button>
+
+</nav>
+
+<header>
+
+<h1 id="titulo">Site Inclusivo</h1>
+
+<p id="descricao">
+Este site foi criado para ajudar pessoas com deficiência visual,
+auditiva e de fala. Todos devem ter acesso à informação.
+</p>
+
+</header>
+
+<main>
+
+<section id="servicos"></section>
+
+<h2>Ferramentas de Acessibilidade</h2>
+
+<button onclick="iniciarVoz()">🎤 Comando de voz</button>
+
+<button onclick="lerPagina()">🔊 Ler página</button>
+
+<button onclick="aumentarTexto()">🔎 Aumentar texto</button>
+
+<button onclick="modoContraste()">🌙 Alto contraste</button>
+
+<button onclick="mostrarLibras()">🤟 Libras</button>
+
+<button onclick="modoIdoso()">👴 Modo idoso</button>
+
+</section>
+
+<section id="comunicacao"></section>
+
+<h2>Serviços</h2>
+
+<img src="img/ajuda.jpg" alt="Pessoa ajudando outra pessoa a usar computador">
+
+<p id="textoServico">
+Clique nos botões abaixo se precisar de ajuda ou quiser entrar em contato.
+</p>
+
+<button>📞 Pedir ajuda</button>
+
+<button>💬 Enviar mensagem</button>
+
+<button>🧭 Encontrar serviços</button>
+
+</section>
+
+<section id="acessibilidade">
+
+<h2>Comunicação rápida</h2>
+
+<div class="comunicacao">
+
+<button onclick="falar('Estou com fome')">🍽 Fome</button>
+
+<button onclick="falar('Preciso de água')">💧 Água</button>
+
+<button onclick="falar('Preciso de ajuda')">🆘 Ajuda</button>
+
+<button onclick="falar('Quero ir ao banheiro')">🚻 Banheiro</button>
+
+<button onclick="falar('Estou com dor')">🤕 Dor</button>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>Projeto de inclusão digital</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<div id="librasVideo" style="display:none; position:fixed; bottom:10px; right:10px; width:200px;">
+
+<video width="200" controls>
+
+<source src="libras/interprete.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</body>
+</html>

@@ -139,3 +139,43 @@ voz.lang = "pt-BR";
 speechSynthesis.speak(voz);
 
 }
+
+function responder(){
+
+let pergunta = document.getElementById("pergunta").value.toLowerCase();
+
+let resposta = "";
+
+if(pergunta.includes("ajuda")){
+
+resposta = "Você pode usar os botões de acessibilidade ou falar comandos por voz.";
+
+}
+
+else if(pergunta.includes("acessibilidade")){
+
+resposta = "Este site possui leitura de texto, modo contraste, comando de voz e comunicação por símbolos.";
+
+}
+
+else if(pergunta.includes("emergência")){
+
+resposta = "Clique no botão de emergência para pedir ajuda.";
+
+}
+
+else{
+
+resposta = "Desculpe, ainda estou aprendendo. Tente perguntar sobre ajuda ou acessibilidade.";
+
+}
+
+document.getElementById("resposta").innerText = resposta;
+
+let voz = new SpeechSynthesisUtterance(resposta);
+
+voz.lang = "pt-BR";
+
+speechSynthesis.speak(voz);
+
+}

@@ -131,3 +131,26 @@ margin:5px;
 font-size:20px;
 
 }
+
+#assistente{
+
+margin-top:40px;
+padding:20px;
+background:#222;
+
+}
+
+#assistente input{
+
+font-size:20px;
+padding:10px;
+width:250px;
+
+}
+
+#assistente button{
+
+font-size:20px;
+padding:10px;
+
+}
